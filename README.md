@@ -1,7 +1,5 @@
 # Pruning-via-Merging-Compressing-LLMs-via-Manifold-Alignment-Based-Layer-Merging
 
-# Layer Fusion for Causal Language Models
-
 ## Overview
 
 This project provides a comprehensive pipeline for **fusing layers in pre-trained causal language models** using manifold learning techniques. Layer fusion aims to reduce the number of layers in a model by intelligently combining similar layers, potentially leading to more efficient models without significant loss in performance.
