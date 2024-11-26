@@ -91,6 +91,7 @@ python pipeline.py --ntrain 10 --ngpu 2 --model_path "/path/to/model" --num_task
 - **Embeddings Directory:** Contains pickled files of embedded activations for each layer.
 - **Fusion Info Directory:** Stores logs detailing the fusion process.
 - **Merged Weights Directory:** Holds the fused model's configuration and the `pytorch_model.bin` file.
+- Note: To obtain the final weight, you also need to update the weight index configuration file. If you do not update the configuration file, the weights that do not exist in the index will be randomly initialized, causing problems
 
 **Example Structure:**
 
