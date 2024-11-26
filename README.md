@@ -13,41 +13,6 @@ The pipeline involves:
 5. **Layer Fusion:** Combining layers with high similarity to create a more compact model.
 6. **Saving the Fused Model:** Exporting the modified model for future use.
 
-## Table of Contents
-
-- [Features](#features)
-- [Requirements](#requirements)
-- [Installation](#installation)
-- [Data Format](#data-format)
-- [Usage](#usage)
-- [Process Workflow](#process-workflow)
-- [Outputs](#outputs)
-- [Logging](#logging)
-- [Troubleshooting](#troubleshooting)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
-## Features
-
-- **Model Compatibility:** Supports causal language models from Hugging Face's Transformers library.
-- **Customizable Fusion:** Specify the number of layers to fuse based on similarity metrics.
-- **Efficient Computation:** Utilizes adaptive chunking for memory-efficient distance calculations.
-- **Robustness:** Includes mechanisms to handle numerical stability issues during matrix computations.
-- **Comprehensive Logging:** Records detailed information about the fusion process for traceability.
-
-## Requirements
-
-- **Python:** 3.8 or higher
-- **Libraries:**
-  - `torch`
-  - `transformers`
-  - `numpy`
-  - `pandas`
-  - `scikit-learn`
-  - `tqdm`
-  - `pickle`
-  - `logging`
-
 ## Installation
 
 1. **Clone the Repository:**
@@ -59,17 +24,11 @@ The pipeline involves:
 2. **Create a Virtual Environment (Optional but Recommended):**
 
    ```bash
-   python3 -m venv venv
-   source venv/bin/activate
+   conda create -n maniflod_compression python=3.9 -y
+   conda activate maniflod_compression
    ```
 
 3. **Install Dependencies:**
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   *If `requirements.txt` is not provided, you can install the necessary libraries using:*
 
    ```bash
    pip install torch transformers numpy pandas scikit-learn tqdm
@@ -77,35 +36,7 @@ The pipeline involves:
 
 ## Data Format
 
-The pipeline expects data organized in a specific directory structure with CSV files for different subjects. Each subject should have corresponding development (`dev`) and test (`test`) CSV files.
-
-### Directory Structure:
-
-```
-data/
-├── dev/
-│   ├── subject1_dev.csv
-│   ├── subject2_dev.csv
-│   └── ...
-└── test/
-    ├── subject1_test.csv
-    ├── subject2_test.csv
-    └── ...
-```
-
-### CSV File Format:
-
-Each CSV file should follow this structure:
-
-- **Column 0:** Question prompt (string)
-- **Columns 1-4:** Multiple-choice options labeled A to D
-- **Column 5:** Correct answer label (e.g., "A", "B", "C", or "D")
-
-*Example Row:*
-
-| Column 0                | Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
-|-------------------------|----------|----------|----------|----------|----------|
-| "What is the capital..."| "A. ..." | "B. ..." | "C. ..." | "D. ..." | "B"      |
+The pipeline expects MMLU data
 
 ## Usage
 
