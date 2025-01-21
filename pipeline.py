@@ -620,7 +620,7 @@ def main():
     # Define command-line arguments with descriptions and default values
     parser.add_argument("--ntrain", "-k", type=int, default=5, help="Number of training examples to include in prompts")
     parser.add_argument("--ngpu", "-g", type=int, default=4, help="Number of GPUs to use")
-    parser.add_argument("--model_path", type=str, default="/data/yangzhao/point/baichuan/Meta-Llama-3-70B", help="Path to the pre-trained model")
+    parser.add_argument("--model_path", type=str, default="openai-community/gpt2", help="Path to the pre-trained model")
     parser.add_argument("--num_tasks", "-n", type=int, default=57, help="Number of MMLU tasks to process (default: 57)")
     parser.add_argument("--num_samples", "-m", type=int, default=1, help="Number of samples per task (default: 1)")
     parser.add_argument("--data_dir", "-d", type=str, default="data", help="Directory containing the data")
@@ -666,7 +666,7 @@ def main():
         device_map="auto",         # Automatically map layers to available devices
         torch_dtype=torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float32,  # Use bfloat16 if supported
     )
-
+        #The model is set in evaluation mode by default using model.eval()
     print(f"Initial model configuration: {model.config}")  # Display the model's configuration
 
     # Define the types of weights to be fused between layers

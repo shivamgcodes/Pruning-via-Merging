@@ -4,6 +4,7 @@
  VITs - currently have three models from them ViTs, these are MAE with losses available
  DEITS - then they also have a school of deit s , these are img classification models, sooo again, easy to eval
  DINOv2 (maybe exclude the giant) and for feature extraction too and img classification
+ I-jepa is there too
 ## google 
  VIT - they also have their own school of ViTs
  https://github.com/google-research/vision_transformer?tab=readme-ov-file#available-vit-models
