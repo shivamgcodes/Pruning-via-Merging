@@ -2,6 +2,7 @@
 
 ## meta 
  VITs - currently have three models from them ViTs, these are MAE with losses available
+    VITs - mae and msn exist
  DEITS - then they also have a school of deit s , these are img classification models, sooo again, easy to eval
  DINOv2 (maybe exclude the giant) and for feature extraction too and img classification
  I-jepa is there too
@@ -50,3 +51,30 @@ image gen
 
 ##nvidia
  sana - text to image Linear diffusion transformer .. lol wtf idk what to do of that
+
+| **Model**                      | **Architecture**                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------|
+| `facebook/vit-mae-base`        | Vision Transformer (ViT)                                                        |
+| `microsoft/beit-base-patch16`  | Vision Transformer (ViT)                                                        |
+| `google/siglip-base-patch16`   | Vision Transformer (ViT)                                                        |
+| `facebook/deit-small-distilled`| Vision Transformer (ViT)                                                        |
+| `openai/clip-vit-base-patch32` | Vision Transformer (ViT)                                                        |
+| `facebook/dinov2-small`        | Vision Transformer (ViT)                                                        |
+| `facebook/vit-msn`             | Vision Transformer (ViT)                                                        |
+| `facebook/levit`               | Vision Transformer with convolutional elements                                  |
+
+| **Model**                      | **Architecture**                                                                 |
+|--------------------------------|---------------------------------------------------------------------------------|
+| `microsoft/swin-base-simmim`   | Swin Transformer (hierarchical, shifted windows)                                 |
+| `ibm/crossvit`                 | Hybrid Vision Transformer with multi-scale tokens                                |
+| `nvidia/segformer`             | Transformer with hierarchical encoder and lightweight MLP decoder                |
+| `tnt`                          | Nested Transformer: local patch transformers within global patch transformers    |
+| `eva-2`                        | Enhanced Vision Transformer with large-scale pretraining improvements            |
+| `facebook/ijepa`               | Image Joint-Embedding Predictive Architecture                                    |
+| `google/lit`                   | Locked Image-Text Tuning                                                         |
+
+
+
+
+for cka matrices should be n X neural rep size
+n = number of examples
