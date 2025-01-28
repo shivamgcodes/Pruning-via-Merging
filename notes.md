@@ -78,3 +78,15 @@ image gen
 
 for cka matrices should be n X neural rep size
 n = number of examples
+
+n07745940- strawberry 
+
+n07920052 - espresso
+
+n09472597 - volcano
+
+n03991062 - pot, flowerpot
+
+n01484850 - shark
+
+n02504013 - indian elephan, elephas maximus
