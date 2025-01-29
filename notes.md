@@ -90,3 +90,6 @@ n03991062 - pot, flowerpot
 n01484850 - shark
 
 n02504013 - indian elephan, elephas maximus
+
+
+# google vit, facebook deit
