@@ -93,3 +93,9 @@ n02504013 - indian elephan, elephas maximus
 
 
 # google vit, facebook deit
+
+$$
+S_{ij} = \text{NPIB}(E_i, E_j) =
+\frac{\sum\limits_{x \in E_i} \sum\limits_{y \in E_j} p(x, y) \log \frac{p(x,y)}{p(x)p(y)}}
+{\sqrt{\left(\sum\limits_{x \in E_i} p(x) \log p(x) \right) \cdot \left(\sum\limits_{y \in E_j} p(y) \log p(y) \right)}}
+$$

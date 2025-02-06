@@ -3,3 +3,6 @@ val_images
 __pycache__
 val_csv
 todo.md
+test_imgs
+val_merged_csv
+val_merged_imgs

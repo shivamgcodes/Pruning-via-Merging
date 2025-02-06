@@ -620,11 +620,11 @@ def main():
     # Define command-line arguments with descriptions and default values
     parser.add_argument("--ntrain", "-k", type=int, default=5, help="Number of training examples to include in prompts")
     parser.add_argument("--ngpu", "-g", type=int, default=4, help="Number of GPUs to use")
-    parser.add_argument("--model_path", type=str, default="openai-community/gpt2", help="Path to the pre-trained model")
+    parser.add_argument("--model_path", type=str, default="meta-llama/Meta-Llama-3-8B", help="Path to the pre-trained model")
     parser.add_argument("--num_tasks", "-n", type=int, default=57, help="Number of MMLU tasks to process (default: 57)")
     parser.add_argument("--num_samples", "-m", type=int, default=1, help="Number of samples per task (default: 1)")
     parser.add_argument("--data_dir", "-d", type=str, default="data", help="Directory containing the data")
-    parser.add_argument("--num_layer", "-i", type=int, default=1, help="Number of layers to fuse (default: 1)")
+    parser.add_argument("--num_layer", "-i", type=int, default=6, help="Number of layers to fuse (default: 1)")
     args = parser.parse_args()
 
     # Extract the model name from the provided model path
